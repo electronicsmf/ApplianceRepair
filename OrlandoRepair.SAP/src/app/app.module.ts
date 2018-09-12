@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PersonalComponent } from './personal/personal.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MyservicesComponent } from './myservices/myservices.component';
+import { RepairsService } from './_services/repairs.service';
 
 
 @NgModule({
@@ -34,7 +35,9 @@ import { MyservicesComponent } from './myservices/myservices.component';
       HttpModule,
       RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+    RepairsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

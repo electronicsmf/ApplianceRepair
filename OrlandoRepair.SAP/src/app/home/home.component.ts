@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
+import { RepairsService } from './../_services/repairs.service';
+
 
 @Component({
   selector: 'app-home',
@@ -12,11 +12,10 @@ export class HomeComponent implements OnInit {
   repairs: Array<any>;
   error: string;
 
-  constructor(private http: Http) { }
+  constructor(private repairsService: RepairsService) { }
 
   ngOnInit() {
-      this.http.get('data/repairs.json')
-          .map(res => res.json())
+      this.repairsService.getAllRepairs()
           .subscribe(
              data => this.repairs = data,
              error => this.error = error.statusText
