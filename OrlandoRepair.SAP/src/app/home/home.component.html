@@ -17,11 +17,8 @@
                 </div>
             </div>
             <div class="row">
-                <div *ngFor="let repair of repairs" class="col-md-3">
-                    <div class="thumbnail">
-                        <img src="assets/images/{{ repair.image }}.jpg" class="img-responsive brands" alt="image1">
-                        <h4 class="text-center">{{ repair.type }}</h4>
-                    </div>
+                <div *ngFor="let repair of repairs">
+                      <app-repair-card [repair]="repair" class="col-md-3"></app-repair-card>
                 </div>
             </div>
         </div>  

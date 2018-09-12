@@ -16,6 +16,7 @@ import { PersonalComponent } from './personal/personal.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MyservicesComponent } from './myservices/myservices.component';
 import { RepairsService } from './_services/repairs.service';
+import { RepairCardComponent } from './repair-card/repair-card.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { RepairsService } from './_services/repairs.service';
       FooterComponent,
       PersonalComponent,
       GalleryComponent,
-      MyservicesComponent
+      MyservicesComponent,
+      RepairCardComponent
    ],
    imports: [
       BrowserModule,
