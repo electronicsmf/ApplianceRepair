@@ -1,0 +1,14 @@
+C:\Users\Martin\Desktop\OrlandoRepair\orlandoRepair.API\bin\Debug\netcoreapp2.1\OrlandoRepair.API.deps.json
+C:\Users\Martin\Desktop\OrlandoRepair\orlandoRepair.API\bin\Debug\netcoreapp2.1\OrlandoRepair.API.runtimeconfig.json
+C:\Users\Martin\Desktop\OrlandoRepair\orlandoRepair.API\bin\Debug\netcoreapp2.1\OrlandoRepair.API.runtimeconfig.dev.json
+C:\Users\Martin\Desktop\OrlandoRepair\orlandoRepair.API\bin\Debug\netcoreapp2.1\OrlandoRepair.API.dll
+C:\Users\Martin\Desktop\OrlandoRepair\orlandoRepair.API\bin\Debug\netcoreapp2.1\OrlandoRepair.API.pdb
+C:\Users\Martin\Desktop\OrlandoRepair\orlandoRepair.API\obj\Debug\netcoreapp2.1\OrlandoRepair.API.csprojAssemblyReference.cache
+C:\Users\Martin\Desktop\OrlandoRepair\orlandoRepair.API\obj\Debug\netcoreapp2.1\OrlandoRepair.API.csproj.CoreCompileInputs.cache
+C:\Users\Martin\Desktop\OrlandoRepair\orlandoRepair.API\obj\Debug\netcoreapp2.1\OrlandoRepair.API.RazorAssemblyInfo.cache
+C:\Users\Martin\Desktop\OrlandoRepair\orlandoRepair.API\obj\Debug\netcoreapp2.1\OrlandoRepair.API.RazorAssemblyInfo.cs
+C:\Users\Martin\Desktop\OrlandoRepair\orlandoRepair.API\obj\Debug\netcoreapp2.1\OrlandoRepair.API.AssemblyInfoInputs.cache
+C:\Users\Martin\Desktop\OrlandoRepair\orlandoRepair.API\obj\Debug\netcoreapp2.1\OrlandoRepair.API.AssemblyInfo.cs
+C:\Users\Martin\Desktop\OrlandoRepair\orlandoRepair.API\obj\Debug\netcoreapp2.1\OrlandoRepair.API.RazorTargetAssemblyInfo.cache
+C:\Users\Martin\Desktop\OrlandoRepair\orlandoRepair.API\obj\Debug\netcoreapp2.1\OrlandoRepair.API.dll
+C:\Users\Martin\Desktop\OrlandoRepair\orlandoRepair.API\obj\Debug\netcoreapp2.1\OrlandoRepair.API.pdb
