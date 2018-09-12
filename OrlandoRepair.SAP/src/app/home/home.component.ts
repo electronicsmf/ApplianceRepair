@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { repairs } from './../Data/repairs';
-import { areas } from './../Data/areas';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +8,18 @@ import { areas } from './../Data/areas';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  repairs: Array<any> = repairs;
-  areas: Array<any> = areas;
 
-  constructor() { }
+  repairs: Array<any>;
+  error: string;
+
+  constructor(private http: Http) { }
 
   ngOnInit() {
+      this.http.get('data/repairs.json')
+          .map(res => res.json())
+          .subscribe(
+             data => this.repairs = data,
+             error => this.error = error.statusText
+          );
   }
 }

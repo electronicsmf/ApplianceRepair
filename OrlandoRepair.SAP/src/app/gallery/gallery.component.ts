@@ -7,7 +7,7 @@ import { images} from './../data/images';
 })
 export class GalleryComponent implements OnInit {
   images: Array<any> = images;
-  
+
   constructor() { }
 
   ngOnInit() {
