@@ -1,16 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { images} from './../data/images';
+import { ImagesService } from './../_services/images.service';
+
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
-  images: Array<any> = images;
+  images: Array<any>;
+  error: string;
 
-  constructor() { }
+  constructor(private imagesService: ImagesService) { }
 
   ngOnInit() {
+      this.imagesService.getAllImages()
+          .subscribe(
+               data => this.images = data,
+               error => this.error = error.statusText
+          );
   }
 
 }

@@ -1,3 +1,4 @@
+import { ImagesService } from './_services/images.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -36,7 +37,9 @@ import { RepairsService } from './_services/repairs.service';
       RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    RepairsService
+    RepairsService,
+    ImagesService
+
   ],
   bootstrap: [AppComponent]
 })
