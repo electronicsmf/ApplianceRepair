@@ -1,4 +1,7 @@
+import { RepairsService } from './_services/repairs.service';
+import { CommentsService } from './_services/comments.service';
 import { ImagesService } from './_services/images.service';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -15,8 +18,9 @@ import { FooterComponent } from './footer/footer.component';
 import { PersonalComponent } from './personal/personal.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MyservicesComponent } from './myservices/myservices.component';
-import { RepairsService } from './_services/repairs.service';
 import { RepairCardComponent } from './repair-card/repair-card.component';
+
+
 
 
 @NgModule({
@@ -40,7 +44,8 @@ import { RepairCardComponent } from './repair-card/repair-card.component';
   ],
   providers: [
     RepairsService,
-    ImagesService
+    ImagesService,
+    CommentsService
 
   ],
   bootstrap: [AppComponent]

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CommentsService } from './../_services/comments.service';
+
 
 @Component({
   selector: 'app-blog',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+  comments: Array<any>;
+  error: string;
+
+  constructor(private commentsService: CommentsService ) { }
 
   ngOnInit() {
+     this.commentsService.getAllComments()
+         .subscribe(
+           data => this.comments = data,
+           error => this.error = error.statusText
+         );
   }
 
 }

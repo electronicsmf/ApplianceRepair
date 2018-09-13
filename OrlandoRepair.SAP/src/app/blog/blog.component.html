@@ -6,129 +6,18 @@
               <br><small>Blogs for 2017</small>
             </h1>
                 <!-- Blog Post -->
-                <div class="card mb-4">
-                  <img class="img-responsive" src="/assets/images/Customer-Support.jpg" alt="Card image cap">
+                <div *ngFor="let comment of comments" class="card mb-4">
+                  <img class="img-responsive" src="/assets/images/{{ comment.image}}.jpg" alt="Card image cap">
                       <div class="card-body">
-                            <h2 class="card-title">Refrigators Repair</h2>
-                            <p class="card-text">test1</p>
+                            <h2 class="card-title">{{ comment.type }} </h2>
+                            <p class="card-text">{{ comment.description }}</p>
                             <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                        </div>
+                      </div>
                       <div class="card-footer text-muted">
-                          Posted on 2018-02-11 20:59:54 by
-                      <a href="#">Martin Fernandez</a>
+                          Posted on {{ comment.date }} by
+                          <a href="#">{{ comment.name }}</a>
+                      </div>
                 </div>
-                <img class="img-responsive" src="/assets/images/Customer-Support.jpg" alt="Card image cap">
-                  <div class="card-body">
-                        <h2 class="card-title">JavaScript Books</h2>
-                        <p class="card-text">Learning Javascript</p>
-                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Posted on 2018-02-11 21:13:25 by
-                    <a href="#">Martin Fernandez</a>
-                    </div>
-                  <img class="img-responsive" src="/assets/images/Customer-Support.jpg" alt="Card image cap">                  
-                  <div class="card-body">
-                        <h2 class="card-title">Programming Jobs</h2>
-                        <p class="card-text">Love Creating applications</p>
-                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Posted on 2018-02-11 22:30:02 by
-                    <a href="#">Martin Fernandez</a>
-                    </div>
-                                    <img class="img-responsive" src="Upload/1.jpg" alt="Card image cap">
-                  <div class="card-body">
-                        <h2 class="card-title">Animation</h2>
-                        <p class="card-text">Great Photo</p>
-                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Posted on 2018-02-11 22:37:42 by
-                    <a href="#">Martin Fernandez</a>
-                    </div>
-                                    <img class="img-responsive" src="Upload/3.jpg" alt="Card image cap">
-                  <div class="card-body">
-                        <h2 class="card-title">C# Tips</h2>
-                        <p class="card-text">The Best Programming Language</p>
-                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Posted on 2018-02-11 22:59:10 by
-                    <a href="#">Martin Fernandez</a>
-                    </div>
-                                    <img class="img-responsive" src="Upload/4.jpg" alt="Card image cap">
-                  <div class="card-body">
-                        <h2 class="card-title">Tutorials</h2>
-                        <p class="card-text">Frees Tutorials</p>
-                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Posted on 2018-02-11 23:00:08 by
-                    <a href="#">Martin Fernandez</a>
-                    </div>
-                                    <img class="img-responsive" src="Upload/2.jpg" alt="Card image cap">
-                  <div class="card-body">
-                        <h2 class="card-title">HTML5 The perfect Language</h2>
-                        <p class="card-text">HTML5 and CSS3 must learn</p>
-                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Posted on 2018-02-12 06:21:33 by
-                    <a href="#">Martin Fernandez</a>
-                    </div>
-                                    <img class="img-responsive" src="Upload/headerbackground1.jpg" alt="Card image cap">
-                  <div class="card-body">
-                        <h2 class="card-title">Best Website In Orlando</h2>
-                        <p class="card-text">Best UxDesign And Style Company</p>
-                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Posted on 2018-02-12 07:19:08 by
-                    <a href="#">Martin Fernandez</a>
-                    </div>
-                                    <img class="img-responsive" src="Upload/header-bg.jpg" alt="Card image cap">
-                  <div class="card-body">
-                        <h2 class="card-title">UxDesignStyle</h2>
-                        <p class="card-text">Developing Jobs of 2018</p>
-                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Posted on 2018-02-12 07:21:14 by
-                    <a href="#">Martin Fernandez</a>
-                    </div>
-                                    <img class="img-responsive" src="Upload/image.png" alt="Card image cap">
-                  <div class="card-body">
-                        <h2 class="card-title">Php Great Language to learn</h2>
-                        <p class="card-text">Php Very strong language</p>
-                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Posted on 2018-02-12 10:20:07 by
-                    <a href="#">Martin Fernandez</a>
-                    </div>
-                                    <img class="img-responsive" src="Upload/image.jpeg" alt="Card image cap">
-                  <div class="card-body">
-                        <h2 class="card-title">Css3</h2>
-                        <p class="card-text">Css3 is great to style any template</p>
-                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Posted on 2018-02-12 10:39:08 by
-                    <a href="#">Martin Fernandez</a>
-                    </div>
-                                    <img class="img-responsive" src="Upload/image.jpeg" alt="Card image cap">
-                  <div class="card-body">
-                        <h2 class="card-title">Free time</h2>
-                        <p class="card-text">Writing code with pen and paper</p>
-                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Posted on 2018-02-12 13:04:53 by
-                    <a href="#">Martin Fernandez</a>
-                    </div>
-                     
-              </div>
           <!-- Pagination -->
           <ul class="pagination justify-content-center mb-4">
             <li class="page-item">
@@ -193,12 +82,10 @@
 
           <!-- Side Widget -->
           <div class="card my-4">
-            <h5 class="card-header">Side Widget</h5>
+            <h5 class="card-header">We are a local, long established appliance repair company</h5>
             <div class="card-body">
-                    JavaScript is the most popular language above Java, Python, Node.js, Ruby, and more. 
-                    JavaScript is the language that browsers use. It's easy to get started with and to understand.
-                     You can get going right away - unlike other languages, you don't have install a bunch of programs 
-                     before you can even begin.Sep 14, 2017
+                   Our team makes the difference by offering  you 
+                   old fashioned, high quality, customer care. Call or email us to experience the "Reliable Difference".
             </div>
           </div>
 
