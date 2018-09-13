@@ -9,6 +9,12 @@ import { RepairsService } from './../_services/repairs.service';
 })
 export class HomeComponent implements OnInit {
 
+  areaCovers: Array<string> = [
+    'Orlando', 'Celebration', 'Haines City', 'Winter Park', 
+    'Orlo Vista', 'Pine Hills', 'Maitland', 'Apopka', 'Ocooee',
+     'Sanford', 'Longwood', 'Windermere', 'Winter Garde', 'Lake Buena Vista',
+    'Lake Mary', 'Winter Springs', 'Kissimmee', 'Casselberry', 'Winter Haven', 'Clermont'];
+
   repairs: Array<any>;
   error: string;
 
