@@ -9,33 +9,36 @@
             </div>
 			<div class="row">
                 <div class="col-lg-12 col-md-6">
-					
-				     	 <form action="#contact" method="post" onSubmit="return validate(this)">
+				     	 <form #newMessageForm (ngSubmit)="onMessageSubmit(newMessageForm.value)">
 						       <div class="form-group">
 							        <label for="name">Name</label>
-						                   <input type="text" name="name" id="name" placeholder="Name" class="form-control" value="">
+						                   <input type="text" 
+                                                  name="name" 
+                                                  id="name" 
+                                                  placeholder="Name" 
+                                                  class="form-control"
+                                                  ngModel required>
 							   </div>		   
 							   <div class="form-group">
 									<label for="email">Email</label>
-						                   <input type="email" name="email" id="email" placeholder="Email" class="form-control" value="">
+						                   <input type="email" 
+                                                  name="email" 
+                                                  id="email" 
+                                                  placeholder="Email" 
+                                                  class="form-control" 
+                                                  ngModel required>
 						       </div>
 							   <div class="form-group">
 							        <label for="message">Message</label>
-							        <textarea name="message" id="message" class="form-control" rows="5"></textarea>
+							        <textarea name="message" 
+                                                id="message" 
+                                            class="form-control" 
+                                            rows="5"
+                                            ngModel required></textarea>
 							  </div>
 							  <input type="submit" name="submit" class="btn btn-danger btn-lg" value="Send Message">
 				          </form>
-                          <script>
-                               function validate(form){  
-                                    fail = validateName(form.name.value)   
-                                    if(fail == "") {
-                                        alert "No Username was Entered.\\n"
-                                    return "";
-                                    }
-
-
-                         </script>
-
+                       
 				 </div><!--end-col-->
             </div>
         </div>
