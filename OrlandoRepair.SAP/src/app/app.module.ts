@@ -1,6 +1,4 @@
 import { RepairsService } from './_services/repairs.service';
-import { CommentsService } from './_services/comments.service';
-import { ImagesService } from './_services/images.service';
 
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,6 +18,7 @@ import { PersonalComponent } from './personal/personal.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MyservicesComponent } from './myservices/myservices.component';
 import { RepairCardComponent } from './repair-card/repair-card.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -34,7 +33,8 @@ import { RepairCardComponent } from './repair-card/repair-card.component';
       PersonalComponent,
       GalleryComponent,
       MyservicesComponent,
-      RepairCardComponent
+      RepairCardComponent,
+      LoginComponent
    ],
    imports: [
       BrowserModule,
@@ -43,9 +43,7 @@ import { RepairCardComponent } from './repair-card/repair-card.component';
       RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    RepairsService,
-    ImagesService,
-    CommentsService
+    RepairsService
 
   ],
   bootstrap: [AppComponent]

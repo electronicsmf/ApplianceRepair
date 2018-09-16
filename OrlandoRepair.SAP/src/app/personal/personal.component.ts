@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { users } from './../data/user';
+import { RepairsService } from './../_services/repairs.service';
 
 
 @Component({
@@ -8,11 +8,17 @@ import { users } from './../data/user';
   styleUrls: ['./personal.component.css']
 })
 export class PersonalComponent implements OnInit {
-   users: Array<any> = users;
+   users: Array<any>;
+   error: string;
 
-  constructor() { }
+  constructor(private repairsService: RepairsService) { }
 
   ngOnInit() {
+    this.repairsService.getAllUsers()
+    .subscribe(
+      data => this.users = data,
+      error => this.error = error.statusText
+    );
   }
 
 }

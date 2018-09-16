@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ImagesService } from './../_services/images.service';
+import { RepairsService } from './../_services/repairs.service';
 
 @Component({
   selector: 'app-gallery',
@@ -10,10 +10,10 @@ export class GalleryComponent implements OnInit {
   images: Array<any>;
   error: string;
 
-  constructor(private imagesService: ImagesService) { }
+  constructor(private repairsService: RepairsService) { }
 
   ngOnInit() {
-      this.imagesService.getAllImages()
+      this.repairsService.getAllImages()
           .subscribe(
                data => this.images = data,
                error => this.error = error.statusText

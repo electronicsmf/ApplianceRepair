@@ -1,3 +1,4 @@
+import { LoginComponent } from './login/login.component';
 import { BlogComponent } from './blog/blog.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PersonalComponent } from './personal/personal.component';
@@ -15,5 +16,6 @@ export const appRoutes: Routes = [
    { path: 'personal', component: PersonalComponent},
    { path: 'gallery', component: GalleryComponent },
    { path: 'blog', component: BlogComponent},
+   { path: 'login', component: LoginComponent},
    { path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
